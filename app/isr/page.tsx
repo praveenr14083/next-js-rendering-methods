@@ -11,7 +11,8 @@ export default async function ISRPage() {
 
   return (
     <div style={{ padding: 20 }}>
-      <h1>ISR Page</h1>
+      <h1 className="text-3xl">ISR Page</h1>
+      <p>Rendering time of this page {new Date().toLocaleTimeString()}</p>
       <p>Regenerates every 10 seconds.</p>
 
       {todos.slice(0, 3).map((t) => (

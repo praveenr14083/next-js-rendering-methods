@@ -11,7 +11,8 @@ export default async function SSRPage() {
 
   return (
     <div style={{ padding: 20 }}>
-      <h1>SSR Page</h1>
+      <h1 className="text-3xl">SSR Page</h1>
+      <p>Rendering time of this page {new Date().toLocaleTimeString()}</p>
       <p>Rendered on the server for every request.</p>
 
       {posts.slice(0, 3).map((p) => (

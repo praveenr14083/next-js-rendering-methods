@@ -11,7 +11,8 @@ export default async function SSGPage() {
 
   return (
     <div style={{ padding: 20 }}>
-      <h1>SSG Page</h1>
+      <h1 className="text-3xl">SSG Page</h1>
+      <p>Rendering time of this page {new Date().toLocaleTimeString()}</p>
       <p>Generated at build time (static).</p>
 
       {comments.slice(0, 3).map((c) => (

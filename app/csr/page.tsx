@@ -18,7 +18,8 @@ export default function CSRPage() {
 
   return (
     <div style={{ padding: 20 }}>
-      <h1>CSR Page</h1>
+      <h1 className="text-3xl">CSR Page</h1>
+      <p>Rendering time of this page {new Date().toLocaleTimeString()}</p>
       <p>Rendered on the client (browser).</p>
 
       {users.slice(0, 3).map((u) => (
